@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Availability</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+
+  <div class="max-w-lg mx-auto bg-white shadow-lg p-8 rounded-xl">
+    <h2 class="text-3xl font-bold text-blue-600 mb-6">Enter Doctor Availability</h2>
+
+    <form id="doctorForm" class="space-y-5">
+      <div>
+        <label class="font-semibold">Doctor Name</label>
+        <input id="doctorName" class="w-full border p-3 rounded-lg mt-1" required>
+      </div>
+
+      <div>
+        <label class="font-semibold">Available From</label>
+        <input type="time" id="fromTime" class="w-full border p-3 rounded-lg mt-1" required>
+      </div>
+
+      <div>
+        <label class="font-semibold">Available To</label>
+        <input type="time" id="toTime" class="w-full border p-3 rounded-lg mt-1" required>
+      </div>
+
+      <button class="w-full bg-blue-600 text-white py-3 rounded-xl text-lg">Save</button>
+    </form>
+
+    <p id="msg" class="text-green-600 font-bold mt-5 hidden">Saved Successfully!</p>
+
+    <a href="index.html" class="text-blue-500 underline block text-center mt-6">Back to Home</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
